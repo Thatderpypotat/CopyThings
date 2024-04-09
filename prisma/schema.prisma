@@ -15,4 +15,8 @@ model user {
   name                 String      @unique
   youdontknowwhatdisis String
   salt                 String
+  personNamn String
+  personEfternamn String
+  gender String
+  age Int
 }
