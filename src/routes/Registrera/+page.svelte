@@ -6,6 +6,7 @@
 
 <h1>Här kan du registrera:</h1>
 
+<div class="reg">
 <form method="post" action="?/create" use:enhance>
     <div>
         <label for="namn">Ditt användarnamn</label>
@@ -19,7 +20,7 @@
         <label for="personEfternamn">Ditt Efternamn</label>
         <input type="text" id="personEfternamn" name="personEfternamn">
         <label for="age">Din ålder</label>
-        <input type="number" id="age" name="age">
+        <input type="number" id="age" name="age" min=15 max=100>
         <label for="gender">Ditt namn</label>
         <select name="gender" id="gender">
             <option value="female">Kvinna</option>
@@ -29,3 +30,11 @@
     </div>
     <button>Skapa användare</button>
 </form>
+</div>
+
+
+<style>
+input, option, select{
+    color: black;
+}
+</style>
